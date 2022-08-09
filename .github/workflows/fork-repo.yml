@@ -1,0 +1,7 @@
+name: fork-repo
+on: [fork]
+jobs:
+  notify-about-fork:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "${{ github.actor }}"
